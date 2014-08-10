@@ -1,5 +1,5 @@
 '''
-Created on 2014. 8. 10.d
+Created on 2014. 8. 10.
 
 @author: uyu423@gmail.com
 '''
