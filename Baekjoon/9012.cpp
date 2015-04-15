@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 
-//typedef enum { false, true } bool;
+//typedef enum { false, true } bool;	//gcc enum processing
 typedef struct __stackManager {
 	int top;
 } stackMgr;
