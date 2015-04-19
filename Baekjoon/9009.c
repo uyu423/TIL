@@ -14,7 +14,7 @@
 
 /*
  * ** Try Status **
- * try 01 : runtime error (fixed line 73) 
+ * try 01 : runtime error (fixed line 76) 
  * 		- before : if(fiboEndValue < num)
  * 		- after : if(fiboEndValue <= num)
  * try 02 : success
