@@ -9,7 +9,7 @@ __[알고스팟](https://www.algospot.com/)__과 __[백준 온라인 저지](htt
 
 ### Directory Overview
 * __[백준 온라인 저지](https://www.acmicpc.net)__에서 해결한 문제의 소스파일이 공개된 디렉토리입니다.
-* 백준 온라인 저지의 문제번호와 파일 이름이 동일합니다. 
+* 백준 온라인 저지의 __문제 번호와 파일 이름이 동일__합니다. 
 * 같은 문제에 대해 여러 해결 방안이 있을 경우 __[ProblemNumber]_v[Number].cpp__ 와 같이 명시합니다.
 
 ### Corder Overview
