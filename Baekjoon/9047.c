@@ -15,7 +15,7 @@
 /*
 * ** Try Status **
 * try 01 : runtime error (num < 1000 exception)
-* try 02 : incorrect value (cnt == error (input 1476))
+* try 02 : incorrect value (cnt == 1 error (input 1476))
 * try 03 : incorrect value (because print debug function;;)
 * try 04 : success
 */
