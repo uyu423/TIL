@@ -12,8 +12,9 @@ __[알고스팟](https://www.algospot.com/)__과 __[백준 온라인 저지](htt
 *	Organiz.	: [Catholic Univ. of Korea](http://catholic.ac.kr)
 *	Major		: [Computer Science](http://csie.catholic.ac.kr/)
 * Minor : Infomation System Engineering
-*	MainDevelopOS	: [CentOS Linux 6.6](https://www.centos.org/) x86 ([kernel](http://kernel.org) 2.6.32-504)
-*	SubDevelopOS	:  [Windows Embedded 8.1 Industry Pro](http://windows.microsoft.com/) x64
+*	MajorDevelopOS	: [CentOS Linux 6.6](https://www.centos.org/) x86 ([kernel](http://kernel.org) 2.6.32-504)
+*	MinorDevelopOS_01 : [Kubuntu Linux 15.04](http://www.kubuntu.org/) x86 (kernel 3.19.0-15)
+*	MinorDevelopOS_02	: [Windows Embedded 8.1 Industry Pro](http://windows.microsoft.com/) x64
 *	UsingPorgramLangs	: C, C++, Java
 *	MainUsingTools	: [VIM](http://www.vim.org/), [Notepad++](http://notepad-plus-plus.org/)
 * SubUsingTools : [Eclipse Luna](http://eclipse.org/), [Visual Studio 2013 Professional](https://www.visualstudio.com/)
