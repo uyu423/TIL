@@ -23,7 +23,7 @@ bool heapFull() {
 }
 
 bool heapEmpty() {
-        return (numOfData == -1 ? true : false);
+        return (numOfData < 0 ? true : false);
 }
                                                                                              
 void push(int data) {                                                                        
