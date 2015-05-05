@@ -27,9 +27,9 @@ bool heapEmpty() {
 }
                                                                                              
 void push(int data) {                                                                        
-        int pos = ++numOfData;                                                               
-        if(heapFull()) {                                                                     
-                printf("Heap Array Full.\n");                                                
+        int pos = ++numOfData;
+        if(heapFull()) {
+                printf("Heap Array Full.\n");
                 return;
         }
         while(1) {
@@ -53,6 +53,7 @@ int pop() {
                 printf("Heap Array Empty.\n");
                 return -1;
         }
+		/* reallocate B-Tree */
         while(1) {
                 if(child > numOfData) {
                         heap[cur] = lastData;
