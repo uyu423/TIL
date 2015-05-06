@@ -156,7 +156,7 @@ class SPA_05 {
 		System.out.printf("input ququeNum : ");		quenum = scan.nextInt();	//창구 개수
 		/* input ed*/
 
-		/* Generate GasStation Instance at Default value */ 
+		/* Generate GasStation Instance at Default values */ 
 //		GasStation gas = new GasStation(1, 0.333333, 921203, 4, 2);
 		GasStation gas = new GasStation(tstep, prarr, seed, mean, quenum);
 		gas.open();
