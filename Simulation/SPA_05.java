@@ -21,7 +21,7 @@ class Calc {
 }
 
 class GasStation {
-	Random rnd;	//Random Generator 선선
+	Random rnd;	//Random Generator 선언
 	/*	
 	 *	** INTEGER **
 	 *	seed : 난수 시드값
@@ -151,9 +151,9 @@ class SPA_05 {
 		/* input st */
  		System.out.printf("input tstep : ");	tstep = scan.nextDouble();	//시간 증가량
 		System.out.printf("input prarr : ");	prarr = scan.nextDouble();	//고객 도착 확률
-		System.out.printf("input seed : ");		seed = scan.nextInt();	//랜덤 시드 값
-		System.out.printf("input mean : ");		mean = scan.nextInt(); 	//평균 서비스 시간
-		System.out.printf("input ququeNum : ");		quenum = scan.nextInt();	//창구 개수
+		System.out.printf("input seed : ");	seed = scan.nextInt();		//랜덤 시드 값
+		System.out.printf("input mean : ");	mean = scan.nextInt()	 	//평균 서비스 시간
+		System.out.printf("input ququeNum : ");	quenum = scan.nextInt();	//창구 개수
 		/* input ed*/
 
 		/* Generate GasStation Instance at Default values */ 
