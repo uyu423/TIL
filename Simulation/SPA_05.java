@@ -32,11 +32,11 @@ class GasStation {
 	 *	toque : 총 고객 수
 	 *	quenum : 창구(Server, Queue) 개수
 	 *
-	 *  ** DOUBLE **
-	 *  tstep : 시간 증가량
-	 *  prarr : 고객이 tstep내 도착할 확률
-	 *  u : 일양 분포를 가지는 랜덤 값
-	 *  p: 푸아송 분포를 가지는 랜덤 값
+	 *	** DOUBLE **
+	 *	tstep : 시간 증가량
+	 *	prarr : 고객이 tstep내 도착할 확률
+	 *	u : 일양 분포를 가지는 랜덤 값
+	 *	p: 푸아송 분포를 가지는 랜덤 값
 	 */
 	int seed, mean, arrive, queue, tlimit, totque, quenum; 
 	double tstep, prarr, time, u, p;
