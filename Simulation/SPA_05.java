@@ -3,10 +3,9 @@ import java.util.Scanner;
 
 /* 푸아송 함수 선언 */
 class Calc {
-	public static double poissn(int mean, double p, int seed) {
+	public static double poissn(int mean, int seed) {
 		Random rnd = new Random(seed);
-		double b, prod = 1.0, u;
-		p = 0;
+		double b, prod = 1.0, u, p = 0;
 		b = Math.exp((double)-mean);	//자연로그 밑 e를 -mean 만큼 제곱
 		u = (double)rnd.nextDouble();	//0~1 사이의 일양분포 생성
 		prod = prod * u;
@@ -17,6 +16,22 @@ class Calc {
 			p++;
 		}
 		return p;	//푸아송 분포를 가지는 p 값 리턴
+	}
+
+	/* 푸아송 함수 값 분포 테스트 메소드 */
+	public static void poissonTest(int cnt, int mean, int seed) {
+		Random rnd = new Random(seed);
+		int[] arr = new int[mean*3];
+		for(int i = 0; i < mean*3; i++) {
+			arr[i] = 0;
+		}
+		for(int i = 0; i < cnt; i++) {
+			arr[(int)Calc.poissn(mean, rnd.nextInt())]++;
+		}
+		for(int i = 0; i < mean*3; i++) {
+			System.out.println("arr[" + i + "] = " + arr[i]);
+		}
+		return;
 	}
 }
 
@@ -68,7 +83,7 @@ class GasStation {
 		this.showInitState();
 
 		/* 시간이 tstep 만큼 tlimit이 될 때 까지 증가 */
-		for(time = tstep; time < tlimit; time = time+tstep) {
+		for(time = tstep; time <= tlimit; time = time+tstep) {
 			arrive = 0;	//매 tstep에 대해 도착 여부 초기화
 			u = rnd.nextDouble();
 
@@ -93,7 +108,7 @@ class GasStation {
 				if(tpump[i].getCnt() == 0 && queue != 0) {
 					//고객 감소 후 작업 시간을 푸아송 분포로 tpump[i].cnt로 할당
 					queue--;
-					p = Calc.poissn(mean, p, rnd.nextInt());
+					p = Calc.poissn(mean, rnd.nextInt());
 					tpump[i].setCnt(p);
 				}
 			}
@@ -152,13 +167,16 @@ class SPA_05 {
  		System.out.printf("input tstep : ");	tstep = scan.nextDouble();	//시간 증가량
 		System.out.printf("input prarr : ");	prarr = scan.nextDouble();	//고객 도착 확률
 		System.out.printf("input seed : ");	seed = scan.nextInt();		//랜덤 시드 값
-		System.out.printf("input mean : ");	mean = scan.nextInt()	 	//평균 서비스 시간
+		System.out.printf("input mean : ");	mean = scan.nextInt();	 	//평균 서비스 시간
 		System.out.printf("input ququeNum : ");	quenum = scan.nextInt();	//창구 개수
 		/* input ed*/
+
+//		Calc.poissonTest(1000, mean, seed);	//푸아송 분포 값 분포 테스트 함수
 
 		/* Generate GasStation Instance at Default values */ 
 //		GasStation gas = new GasStation(1, 0.333333, 921203, 4, 2);
 		GasStation gas = new GasStation(tstep, prarr, seed, mean, quenum);
 		gas.open();
+		return;
 	}
 }
