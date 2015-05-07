@@ -79,7 +79,7 @@ class GasStation {
 	}
 	
 	/* Start the Gas Station business */
-	public void open() {
+	public void startBusiness() {
 		this.showInitState();
 
 		/* 시간이 tstep 만큼 tlimit이 될 때 까지 증가 */
@@ -134,6 +134,7 @@ class GasStation {
 		System.out.println("THE ARRIVAL PROBABILITY : " + this.prarr);
 		System.out.println("THE POISSON MEAN : " + (double)this.mean);
 		System.out.println("THE RANDOM SEED : " + this.seed);
+		System.out.println("THE NUMBER OF SERVER(QUEUE) : " + this.quenum);
 		System.out.printf("TIME\t\tARRIVAL\tQUEUE\t");
 		for(int i = 0; i < quenum; i++) {
 			System.out.printf("TPUMP[%d]\t", i);
@@ -158,25 +159,23 @@ class Queue {
 }
 
 class SPA_05 {
-	public static void main(String[] args) {		
-		double tstep, prarr;
-		int seed, mean, quenum;
+	static double tstep, prarr;
+	static int seed, mean, quenum;
+	public static void inputData() {
 		Scanner scan = new Scanner(System.in);
-
-		/* input st */
  		System.out.printf("input tstep : ");	tstep = scan.nextDouble();	//시간 증가량
 		System.out.printf("input prarr : ");	prarr = scan.nextDouble();	//고객 도착 확률
 		System.out.printf("input seed : ");	seed = scan.nextInt();		//랜덤 시드 값
 		System.out.printf("input mean : ");	mean = scan.nextInt();	 	//평균 서비스 시간
 		System.out.printf("input ququeNum : ");	quenum = scan.nextInt();	//창구 개수
-		/* input ed*/
-
+		return;
+	}
+	public static void main(String[] args) {
+		inputData();
 //		Calc.poissonTest(1000, mean, seed);	//푸아송 분포 값 분포 테스트 함수
-
-		/* Generate GasStation Instance at Default values */ 
-//		GasStation gas = new GasStation(1, 0.333333, 921203, 4, 2);
+//		GasStation gas = new GasStation(1, 0.333333, 921203, 4, 2);	//Default GasStation value
 		GasStation gas = new GasStation(tstep, prarr, seed, mean, quenum);
-		gas.open();
+		gas.startBusiness();
 		return;
 	}
 }
