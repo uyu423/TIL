@@ -25,13 +25,13 @@ class Calc {
 		double v1, v2, s, temp;
 
 		do {
-			v1 = 2 * rnd.nextDouble() - 1;
-			v2 = 2 * rnd.nextDouble() - 1;
+			v1 = 2 * rnd.nextDouble() - 1; 	// -1.0 ~ 1.0 사이의 일양분포 생성
+			v2 = 2 * rnd.nextDouble() - 1;	// -1.0 ~ 1.0 사이의 일양분포 생성
 			s = (v1 * v1) + v2 * v2;
 		} while(s >= 1 || s == 0);
 		s = Math.sqrt((-2 * Math.log(s)) / s);
 		temp = v1 * s;
-		temp = (stdev * temp) + (double)mean;
+		temp = (stdev * temp) + (double)mean; // 평균 값과 표준편차 값이 적용된 가우시안 값을 생성
 		return temp;
 	}
 
