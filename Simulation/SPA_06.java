@@ -35,12 +35,6 @@ class Calc {
 		return temp;
 	}
 
-	/* 가우시안 함수 리턴 값 분포 테스트 메소드 */
-	public static void gaussianTest(int cnt, int mean, double stdev, int seed) {
-		return;
-	}
-
-
 	/* 푸아송 함수 값 분포 테스트 메소드 */
 	public static void poissonTest(int cnt, int mean, int seed) {
 		Random rnd = new Random(seed);
