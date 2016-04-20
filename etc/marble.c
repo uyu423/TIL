@@ -1,8 +1,12 @@
 /*
- *	Corder : Yu Yongwoo (uyu423@gmail.com / CUK CSIE '10)
- *	Ubuntu 15.10 (x64 / Linux Kernel 4.2.0)
- *	GNU Compiler Colletion 5.2.1 Compile Options -O2 -DNDEBUG
- *	Vi IMproved 7.4, File Character Encoding UTF-8
+ * Topic : 공 떨어뜨리기 문제 (https://github.com/uyu423/Algorithm-Problem-Solving/blob/master/etc/marble.pdf)
+ * Corder : Yu Yongwoo (uyu423@gmail.com || http://luckyyowu.tistory.com)
+ * Date : 2016. 04. 12
+ * Development Environment
+ *	- Ubuntu 15.10 (x64 / Linux Kernel 4.2.0)
+ *	- GNU Compiler Colletion 5.2.1 Compile Options -O2 -DNDEBUG
+ *	- Vi IMproved 7.4, File Character Encoding UTF-8
+ * Default Recursion Formula : MIN(MAX(f(n-k), f(k-1)) + 1)
  */ 
 
 #include <stdio.h>
