@@ -58,8 +58,9 @@ class memberManagementSystem {
 		}
 	
 		void setMemberInfo() {
+			srand((unsigned int)time(NULL));
 			for(int i=0; i<maxCnt; i++) {
-				member[i].setMemScore(rand() % 100 + 1);
+				member[i].setMemScore(rand() % 100);
 				member[i].setMemIdx(makeMemberIdxString());
 			}
 		}
