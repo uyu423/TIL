@@ -4,10 +4,15 @@
  *  Corder : Yowu (uyu423@gmail.com || http://luckyyowu.tistory.com)
  *  Dev Env : Ubuntu 16.04, gcc no-compile-ops, vim, utf-8
  *  
- *  try 01 : success?
+ *  try 01 : runtime error
+ *  try 02 : trying chaging matrix array using calloc -> runtime error
+ *  try 03 : what the fucking runtime error
+ *  try 04 : remove fflush, debugFunc. but Inavild Answers.
+ *
  */
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #define MAX 5001
 
 int matrix[MAX][MAX];
@@ -23,38 +28,32 @@ char myStrrev(char *origin, char *target) { //linux system haven't strrev functi
 
 void checkMatrix(int col, int row) {
 	int mCol = col + 1, mRow = row + 1;
+	int a = matrix[mRow - 1][mCol];
+	int b = matrix[mRow][mCol - 1];
+	int c = matrix[mRow - 1][mRow - 1];
 	if(rev[col] == str[row]) {
-		matrix[mRow][mCol] = (matrix[mRow - 1][mCol] > matrix[mRow][mCol - 1]) ? matrix[mRow - 1][mCol] + 1 : matrix[mRow][mCol - 1] + 1;
+		if(a > b && a > c) { matrix[mRow][mCol] = a + 1; }
+		else if(b > a && b > c) { matrix[mRow][mCol] = b + 1; }
+		else { matrix[mRow][mCol] = c + 1; }
 	}
 	else {
-		matrix[mRow][mCol] = (matrix[mRow - 1][mCol] > matrix[mRow][mCol - 1]) ? matrix[mRow - 1][mCol] : matrix[mRow][mCol - 1];
-	}
-}
-
-void printForDebug(int t) {
-	int i, j;
-	for(i=0; i<=t; i++) {
-		for(j=0; j<=t; j++) {
-			printf("%3d", matrix[i][j]);
-		}
-		putchar('\n');
+		if(a > b && a > c) { matrix[mRow][mCol] = a; }
+		else if(b > a && b > c) { matrix[mRow][mCol] = b; }
+		else { matrix[mRow][mCol] = c; }
 	}
 }
 
 int main(void) {
 	int t, i, j;
 	scanf("%d", &t);
-	fflush(stdin);
 	scanf("%s", str);
 	myStrrev(str, rev);
-//	printf("%s | %s\n", str, rev);
 	for(i=0; i<t; i++) {
 		for(j=0; j<t; j++) {
 			checkMatrix(i, j);
 		}
 	}
-//	printForDebug(t);
-	printf("%d\n" ,t - matrix[t+1][t+1]);
+	printf("%d\n" ,t - matrix[t][t]);
 
 	return 0;
 }
