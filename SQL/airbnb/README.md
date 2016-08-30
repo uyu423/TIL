@@ -1,7 +1,7 @@
 # Airbnb Database를 Reversing 해보자
 
 ## 현재 까지의 문제점.
-  Issue #3 : DB의 부담을 덜어주자
+  Issue #3 : [DB의 부담을 덜어주자](https://github.com/uyu423/Programming-Practice/issues/3)
 
 ## 관계도 (미완성)
 - 0.0.1 : initial
