@@ -6,6 +6,8 @@
 ## 관계도 (미완성)
 - 0.0.1 : initial
 ![image](https://cloud.githubusercontent.com/assets/8033320/18083204/1fdccbea-6edd-11e6-9d08-95bb5a1d2f4f.png)
+- 0.0.2
+![image](https://cloud.githubusercontent.com/assets/8033320/18138894/dfacfea6-6fe9-11e6-9709-1a9ff6c75fdc.png)
 
 ## 요구사항
 일반적인(https://www.airbnb.com/s/seoul) 숙박 예약 시스템을 만드려고 합니다.
