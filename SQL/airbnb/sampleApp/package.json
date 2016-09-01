@@ -4,11 +4,21 @@
   "description": "Sample Application for Airbnb DB Test",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node --presets=es2015 ./app.js"
   },
   "author": "Yowu",
   "license": "GPL-3.0",
   "dependencies": {
-    "mysql": "^2.11.1"
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "body-parser": "^1.15.2",
+    "colors": "^1.1.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "moment": "^2.14.1",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "node-qsb": "0.0.3-1"
   }
 }
