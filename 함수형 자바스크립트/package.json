@@ -1,0 +1,22 @@
+{
+  "name": "functional-js-study",
+  "version": "1.0.0",
+  "description": "Study Functional JS by underscore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://uyu423@github.com/uyu423/functional-js-study.git"
+  },
+  "author": "Yowu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/uyu423/functional-js-study/issues"
+  },
+  "homepage": "https://github.com/uyu423/functional-js-study#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
