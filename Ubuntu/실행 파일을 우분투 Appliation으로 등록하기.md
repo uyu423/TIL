@@ -10,6 +10,7 @@
 - 우분투에서 Application 목록 관리는 `/usr/share/applicatons` 내에서 `*.desktop` 파일로 관리된다.
 - 그렇다고 `/usr/share/applications`에 가서 desktop 파일을 작성할 필요는 없다. 우리에겐 `desktop-file-install`이라는 좋은 명령어가 있다.
 - 텔레그램 ELF 실행파일을 케이스로 `telegram.desktop`을 만들어보자.
+
   ```bash
   echo '[Desktop Entry]
   Name=Telegram
@@ -30,7 +31,7 @@
 sudo desktop-file-install telegram.desktop
 ```
 
-## 실행파일을 `$PATH`경로에 넣어주자.
+## 실행파일을 `$PATH`경로에 만들어주자.
 - 이제 우분투 Application으로 나타는 나지만 실제로 `PATH` 경로에는 파일이 없기 때문에 실행되지 않는다. 나는 `/home/uyu423/.telegram/` 내에 `Telegram`이라는 실행파일이 있엇고, 이를 `/usr/local/bin`에 `telegram`으로 심볼릭 링크를 생성했다.
 ```bash
 sudo ln -s /home/uyu423/.telegram/Telegram /usr/local/bin/telegram
