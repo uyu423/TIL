@@ -1,4 +1,4 @@
-# Dependency Injection whth Node.js
+# Dependency Injection with Express.js
 
 ## 왜 Node.js에서 Dependency Injection을 찾으셈?
 - Express.js로 API Server를 구성해야하는 작업을 진행 중이다. 기존에 내가 하던 방식은 Dependency가 너무 심했다.
@@ -63,6 +63,7 @@
   import mysqlAndQuerys from 'config/mysql';
   import mongodbAndQuerys from 'config/mongodb';
   import { Menu } from 'models';
+
 
   app.get('/menu/:idx', (req, res) => {
     new Menu(mysqlAndQuerys).getMenuByIdx(req.params.idx, (err, result) => {
