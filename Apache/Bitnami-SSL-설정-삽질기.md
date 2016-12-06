@@ -1,6 +1,7 @@
 # Bitnami Apache2 SSL 설정 삽질기
 
 ## Trouble Shooting 부들부들..
+- 회사 랜딩 페이지(공식 홈페이지)가 특정 기기(이라 쓰고 모바일이라 읽는다)에서만 SSL 인증 문제가 발생했다.(CA 인증 실패) 설정파일에서 Certificate파일과 Private Key파일, Chain 파일까지 모두 제대로 잡았다고 생각했는데, 적용이 안되는 상황. 원인부터 밝히자면 내가 SSL 설정을 잡았던 그 `conf` 파일이 사실은 `YOU JUST ACTIVATED MY TRAP CARD` 였던 상황
 - 사실 이 TIL을 작성하게된 결정적인 계기는 EC2 AMI에 있는 `Bitnami` 라는 친구 덕분이다. [Bitnami](https://bitnami.com/aws)는 서버 설정의 많은 것을 생략할 수 있게 해주는 좋은 친구지만 디테일한 설정을 하려면 약간의 러닝 커브가 생긴다.
 - 심지어 Apache와 같은 패키지가 APT로 관리가 되지 않는 것 같다. 수 많은 개발자들이 거쳐간 EC2에는 온갖 잡다한 중복 설정이 존재했고, Apache가 두 개 설치되어 있었다.
   - `/usr/sbin/apache2` 그리고 `/opt/bitnami/apache2/bin/httpd`
