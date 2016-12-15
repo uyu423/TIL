@@ -16,15 +16,15 @@
     - SAML
     - Custom (기타?)
 - 기본적으로 서드파티 인증 성공 후 다음 코드를 실행시켜 주면 된다. 예시는 Javascript 지만 Swift, Java, Xamarin 등 다양하게 있다.
-  ```javascript
-  AWS.config.region = 'ap-northeast-1' // Region;
-  AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'YOUR_AWS_COGNITO_IDENTITY_POOL_ID',
-    Logins: {
-      'graph.facebook.com': response.authResponse.accessToken
-    }
-  });
-  ```
+```javascript
+AWS.config.region = 'ap-northeast-1' // Region;
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+  IdentityPoolId: 'YOUR_AWS_COGNITO_IDENTITY_POOL_ID',
+  Logins: {
+    'graph.facebook.com': response.authResponse.accessToken
+  }
+});
+```
   - `YOUR_AWS_COGNITO_IDENTITY_POOL_ID`는 Identity Pool 생성 후 Sample Code 메뉴에서 확인 할 수 있다.
 
 # Facebook App 설정
@@ -42,17 +42,17 @@
 # 마무리
 - 설정을 모두 마치고 아래에 있는 Sample HTML Code처럼 `aws-sdk`와 `facebook-sdk`가 Load된 상태에서 로그인을 시도 후 성공하면 샘플 페이지에서 아래와 같이 상태가 변경되고 Cognito Token 값이 리턴된다.
 ![image](https://cloud.githubusercontent.com/assets/8033320/21236715/89686d4c-c33f-11e6-84e2-2554e3810f43.png)
-  ```json
-  {
-    "Credentials":{
-      "AccessKeyId":"ASIA...",
-      "Expiration":1481829283,
-      "SecretKey":"V+2AWc...",
-      "SessionToken":"AgoGb3JpZ..."
-      },
-    "IdentityId":"YOUR_AWS_COGNITO_IDENTITY_POOL_ID"
-  }
-  ```
+```json
+{
+  "Credentials":{
+    "AccessKeyId":"ASIA...",
+    "Expiration":1481829283,
+    "SecretKey":"V+2AWc...",
+    "SessionToken":"AgoGb3JpZ..."
+    },
+  "IdentityId":"YOUR_AWS_COGNITO_IDENTITY_POOL_ID"
+}
+```
   - `Credentials`로 넘어온 모든 값들을 DB에 저장해 놓고, 인증이 필요할 때마다 사용하면 될 듯하다.
   - `Expiration`은 누가봐도 UNIX TIME 포맷이다.. moment 같은 곳에 넣고 돌려서 re-formating 해주면 될 듯하다.
 - AWS Console의 Cognito에서 GUI로 Dashboard를 확인 할 수 있다.
