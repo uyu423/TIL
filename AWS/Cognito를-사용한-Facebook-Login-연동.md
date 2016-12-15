@@ -36,7 +36,8 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
   - 이 것이 설정되어 있지 않으면 로그인 시 리디렉션 Exception이 발생한다.
   ![image](https://cloud.githubusercontent.com/assets/8033320/21236332/f9742a88-c33d-11e6-91b7-ff488a82731f.png)
 - Facebook Developer Guide에도 나와있지만 최하단의 Sample 코드처럼 작성하면 아래와 같은 샘플 로그인 페이지가 나타난다.
-  ![image](https://cloud.githubusercontent.com/assets/8033320/21236759/a745dbe2-c33f-11e6-9f4c-310ed0f83ff3.png)
+
+![image](https://cloud.githubusercontent.com/assets/8033320/21236759/a745dbe2-c33f-11e6-9f4c-310ed0f83ff3.png)
 
 
 # 마무리
