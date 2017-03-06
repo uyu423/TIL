@@ -21,8 +21,7 @@ COMODORSADomainValidationSecureServerCA.crt
 COMODORSAAddTrustCA.crt
 STAR_example_co_kr.crt
 ```
-- `STAR_example_co_kr.crt` 파일을 제외한 나머지는 SSL 인증서의 유효성을 체크하는 Certificate 들이다.
-- 위 4개의 파일은 나중에 nginx에서 사용한다. 그러기 위해서는 하나의 파일로 번들링해두어야 한다. 다음과 같이 `cat` 명령어로 쉽게 bundling 할 수 있다. 미리 해두자
+- 위 4개의 파일은 SSL 인증서의 유효성을 체크하는 Certificate 들이다. 나중에 nginx에서 SSL을 적용할 때 사용한다. 다만 nginx에서 사용하기 위해서는 4개의 파일을 하나로 번들링 해주어야 하는데 다음과 같이 `cat` 명령어로 쉽게 bundling 할 수 있다. 미리 해두자
 ```bash
 cat STAR_example_co_kr.crt \
 COMODORSADomainValidationSecureServerCA.crt \
