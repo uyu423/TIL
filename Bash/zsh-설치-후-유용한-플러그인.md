@@ -24,7 +24,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # .zshrc plugins=( [plugins...] zsh-syntax-highlighting)
 ```
-### bulet-train
+### bullet-train
 - 좀 더 유용한 zsh 테마
 ```bash
 wget http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
