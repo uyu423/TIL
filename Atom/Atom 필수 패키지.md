@@ -3,6 +3,10 @@
   - 나는 Node.js 개발 환경을 목표로 패키지를 설치했다.
   - 나는 Atom 완전 초심자다
   - 나는 원래 vim을 모든 개발에 사용했다.
+- 나는 한큐에간다
+  ```bash
+  apm install vim-mode-plus vim-mode-plus-ex-mode platformio-ide-terminal atom-beautify code-peek highlight-selected linter linter-csslint linter-eslint linter-ui-default busy-signal intentions minimap pigments seti-ui
+  ```
 
 ## vim-mode-plus
 - 내가 바로 이 구역의 vim 충이야..!!
@@ -24,6 +28,7 @@
 
 ## linter
 - 아톰 하단에 메시지 라인을 추가해준다. 다른 추가 패키지와 함께 사용한다.
+- `linter v2`의 경우 추가로 필요한 패키지 : `linter-ui-default`, `busy-signal`, `intentions`
 
 ## linter-csslint
 - linter를 사용하여 css 문법 에러를 찾아준다.
