@@ -5,7 +5,7 @@
   - 나는 원래 vim을 모든 개발에 사용했다.
 - 나는 한큐에간다
   ```bash
-  apm install vim-mode-plus vim-mode-plus-ex-mode platformio-ide-terminal atom-beautify code-peek highlight-selected linter linter-csslint linter-eslint linter-ui-default busy-signal intentions minimap pigments seti-ui
+  apm install vim-mode-plus vim-mode-plus-ex-mode platformio-ide-terminal atom-beautify code-peek highlight-selected linter linter-csslint linter-eslint linter-ui-default busy-signal intentions minimap pigments seti-ui file-type-icons nord-atom-syntax nord-atom-ui
   ```
 
 ## vim-mode-plus
@@ -44,3 +44,9 @@
 
 ## seti-ui
 - 테마로 설치할 수 있다. 파일 타입별 아이콘을 만들어주고, 영 심심한 Atom 이 좀 더 화려해진다.
+
+## file-type-icons
+- 네비게이터의 아이콘을 확장자에 따라 다르게 표현해준다.
+
+## nord-atom-syntax nord-atom-ui
+- [nord](https://github.com/arcticicestudio/nord) 테마의 Color Scheme을 따르는 Atom Syntax와 UI Theme다.
