@@ -5,7 +5,7 @@
   - 나는 원래 vim을 모든 개발에 사용했다.
 - 나는 한큐에간다
   ```bash
-  apm install vim-mode-plus vim-mode-plus-ex-mode platformio-ide-terminal atom-beautify code-peek highlight-selected linter linter-csslint linter-eslint linter-ui-default busy-signal intentions minimap pigments seti-ui file-type-icons nord-atom-syntax nord-atom-ui
+  apm install vim-mode-plus vim-mode-plus-ex-mode platformio-ide-terminal atom-beautify code-peek highlight-selected linter linter-csslint linter-eslint linter-ui-default busy-signal intentions minimap pigments seti-ui file-type-icons nord-atom-syntax nord-atom-ui atom-ternjs
   ```
 
 ## vim-mode-plus
@@ -50,3 +50,6 @@
 
 ## nord-atom-syntax nord-atom-ui
 - [nord](https://github.com/arcticicestudio/nord) 테마의 Color Scheme을 따르는 Atom Syntax와 UI Theme다.
+
+## atom-ternjs
+- javascript 기반의 코드 파일을 분석해서 다양한 제안을 해준다.
