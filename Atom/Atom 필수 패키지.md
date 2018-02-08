@@ -5,13 +5,13 @@
   - 나는 원래 vim을 모든 개발에 사용했다.
 - 나는 한큐에간다
   ```bash
-  apm install vim-mode-plus vim-mode-plus-ex-mode platformio-ide-terminal atom-beautify code-peek highlight-selected linter linter-csslint linter-eslint linter-ui-default busy-signal intentions minimap pigments seti-ui file-type-icons nord-atom-syntax nord-atom-ui atom-ternjs
+  apm install vim-mode-plus ex-mode platformio-ide-terminal atom-beautify code-peek highlight-selected linter linter-csslint linter-eslint linter-ui-default busy-signal intentions minimap pigments seti-ui file-type-icons nord-atom-syntax nord-atom-ui atom-ternjs
   ```
 
 ## vim-mode-plus
 - 내가 바로 이 구역의 vim 충이야..!!
 
-## vim-mode-plus-ex-mode
+## ex-mode
 - `vim-mode-plus`에 커맨드 모드까지 사용할 수 있다. 그런데 `w`, `wq`와 같은 기본적인 것들만 지원됨. 좀 불만족 ㅜㅜ
 
 ## platformio-ide-terminal
