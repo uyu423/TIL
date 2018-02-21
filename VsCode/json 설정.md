@@ -4,13 +4,15 @@
 
 ```json
 {
-    "workbench.colorTheme": "Material Theme",
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "editor.fontFamily": "Ubuntu Mono derivative Powerline",
-    "editor.tabSize": 2,
-    "editor.fontSize": 16,
-    "editor.wordWrap": "on",
-    "tslint.autoFixOnSave": true,
+  "workbench.colorTheme": "Material Theme",
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "editor.fontFamily": "Ubuntu Mono derivative Powerline",
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.wordWrap": "on",
+  "tslint.autoFixOnSave": true,
+  "window.zoomLevel": 0,
+  "editor.rulers": [ 130 ],
 }
 ```
 
