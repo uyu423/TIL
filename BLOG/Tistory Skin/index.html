@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="[##_desc_##]">
+  <meta name="author" content="요우">
+  <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width,target-densitydpi=medium-dpi">
+
+  <meta property="article:author" content="http://facebook.com/luckyyowu">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <meta name="google-site-verification" content="P8PoxChC_vfZ_68x8JapMLEzAih38wvATKAojSCOA7k" />
+  <meta name="naver-site-verification" content="3d6f9e9f93d99438384939308ee6fb0004cf5be0" />
+  <title>[##_page_title_##]</title>
+  <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./images/font.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<![endif]-->
+  <!--[if gte IE 9]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!--<![endif]-->
+
+</head>
+
+<body id="[##_body_id_##]">
+  <s_t3>
+    <div id="dkIndex">
+      <a href="#dkBody">본문 바로가기</a>
+      <a href="#dkGnb">메뉴 바로가기</a>
+    </div>
+
+    <div id="dkWrap" class="wrap_skin ">
+      <div id="dkHead" role="banner" class="area_head ">
+        <h1 class="screen_out">[##_title_##]</h1>
+        <div class="area_profile ">
+          <a class="link_profile" href="/">
+            <img src="[##_image_##]" width="50" height="50" class="img_profile" alt="프로필사진">
+          </a>
+          <div class="info_profile">
+            <button type="button" class="btn_name">[##_blogger_##]
+              <span class="ico_skin ico_name"></span>
+            </button>
+            <ul class="list_name">
+              <li>
+                <a href="[##_owner_url_##]/entry/post" class="link_name">글쓰기</a>
+              </li>
+              <li>
+                <a href="[##_owner_url_##]" class="link_name">관리</a>
+              </li>
+              <li class="box_division">
+                <a href="[##_taglog_link_##]" class="link_name">태그</a>
+              </li>
+              <li>
+                <a href="[##_rss_url_##]" class="link_name">RSS</a>
+              </li>
+            </ul>
+            <p class="txt_condition">[##_title_##]</p>
+          </div>
+        </div>
+
+        <button type="button" class="btn_menu">
+          <span class="ico_skin ico_menu">카테고리 메뉴열기</span>
+        </button>
+      </div>
+
+      <div class="dimmed_layer"></div>
+
+      <button type="button" class="btn_close">
+        <span class="ico_skin ico_close">닫기</span>
+      </button>
+
+      <div class="area_menu">
+        <s_search>
+          <div class="area_search">
+            <button type="button" class="btn_search">
+              <span class="ico_skin ico_search">검색하기</span>
+            </button>
+            <form action="#" method="get" class="frm_search" onsubmit="[##_search_onclick_submit_##]">
+              <fieldset>
+                <legend class="screen_out">검색하기 폼</legend>
+                <label for="tfSearch" class="ico_skin lab_search">검색하기</label>
+                <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" class="tf_search">
+              </fieldset>
+            </form>
+          </div>
+        </s_search>
+
+        <div role="navigation" class="area_navi">
+          <button type="button" class="btn_cate">CATEGORY
+            <span class="ico_skin ico_cate"></span>
+          </button>
+
+          <div class="list_cate">
+            [##_category_list_##]
+          </div>
+        </div>
+      </div>
+
+      <hr class="hide">
+
+      <s_list>
+        <div class="area_list">
+          <div class="tit_category">
+            <a class="link_category">[##_list_conform_##] ([##_list_count_##])</a>
+          </div>
+        </div>
+      </s_list>
+
+      <div id="dkContent" class="cont_skin" role="main">
+        <div id="cMain">
+
+          <s_notice_rep>
+            <div id="mArticle" class="article_skin">
+              <s_index_article_rep>
+                <div class="list_content">
+                  <a href="[##_notice_rep_link_##]" class="link_post">
+                    <strong class="tit_post">[##_notice_rep_title_##]</strong>
+                    <p class="txt_post">[##_notice_rep_summary_##]</p>
+                  </a>
+                  <div class="detail_info">
+                    <a class="link_cate">공지사항</a>
+                    <span class="txt_bar"></span>
+                    [##_notice_rep_date_##]
+                  </div>
+                </div>
+              </s_index_article_rep>
+
+              <s_permalink_article_rep>
+                <div class="skin_view">
+                  <h2 id="dkBody" class="screen_out">티스토리 뷰</h2>
+                  <div class="area_title">
+                    <strong class="tit_category">
+                      <a>공지사항</a>
+                    </strong>
+                    <h3 class="tit_post">
+                      <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                    </h3>
+                    <span class="txt_detail my_post">[##_notice_rep_author_##]
+                      <span class="txt_bar"></span>[##_notice_rep_date_##]
+                    </span>
+                  </div>
+                  <div class="area_view">
+                    [##_notice_rep_desc_##]
+                  </div>
+
+                  <div class="area_etc">
+                    <strong class="screen_out">공유하기 링크</strong>
+                    <ul class="list_share">
+                      <li>
+                        <a href="#none" class="ico_skin link_fb" data-service="facebook">페이스북</a>
+                      </li>
+                      <li>
+                        <a href="#none" class="ico_skin link_ks" data-service="kakaostory">카카오스토리</a>
+                      </li>
+                      <li>
+                        <a href="#none" class="ico_skin link_tw" data-service="twitter">트위터</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </s_permalink_article_rep>
+            </div>
+          </s_notice_rep>
+
+          <s_article_protected>
+
+            <div id="mArticle" class="article_skin">
+              <s_index_article_rep>
+                <div class="list_content">
+                  <a href="[##_article_rep_link_##]" class="link_post">
+                    <strong class="tit_post">[##_article_rep_title_##]</strong>
+                    <p class="txt_post">보호되어 있는 글입니다.</p>
+                  </a>
+                  <div class="detail_info">
+                    <a href="" class="link_cate">보호글</a>
+                    <span class="txt_bar"></span>
+                    [##_article_rep_date_##]
+                  </div>
+                </div>
+              </s_index_article_rep>
+
+              <s_permalink_article_rep>
+                <div class="skin_view">
+                  <h2 id="dkBody" class="screen_out">티스토리 뷰</h2>
+                  <div class="area_title">
+                    <strong class="tit_category">
+                      <a>보호글</a>
+                    </strong>
+                    <h3 class="tit_post">
+                      <a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+                    </h3>
+                    <span class="txt_detail my_post">
+                      <span class="txt_bar"></span>[##_article_rep_date_##]
+                    </span>
+                  </div>
+                  <div class="area_view">
+                    [##_notice_rep_desc_##]
+                    <form class="protected_form" onsubmit="[##_article_dissolve_##]">
+                      <p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+                      <input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" />
+                      <button type="submit">확인</button>
+                    </form>
+                  </div>
+                </div>
+              </s_permalink_article_rep>
+            </div>
+
+          </s_article_protected>
+
+          <s_article_rep>
+            <div id="mArticle" class="article_skin">
+
+              <s_index_article_rep>
+                <div class="list_content">
+                  <a href="[##_article_rep_link_##]" class="link_post">
+                    <strong class="tit_post">[##_article_rep_title_##]</strong>
+                    <p class="txt_post">[##_article_rep_summary_##]</p>
+                  </a>
+                  <div class="detail_info">
+                    <a href="[##_article_rep_category_link_##]" class="link_cate">[##_article_rep_category_##]</a>
+                    <span class="txt_bar"></span>
+                    [##_article_rep_date_##]
+                  </div>
+                </div>
+              </s_index_article_rep>
+
+              <s_permalink_article_rep>
+                <div class="skin_view">
+                  <h2 id="dkBody" class="screen_out">티스토리 뷰</h2>
+                  <div class="area_title">
+                    <strong class="tit_category">
+                      <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                    </strong>
+                    <h3 class="tit_post">
+                      <a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+                    </h3>
+                    <span class="txt_detail my_post">[##_article_rep_author_##]
+                      <span class="txt_bar"></span>[##_article_rep_date_##]
+                      <s_ad_div>
+                        <span class="my_edit">
+                          <span class="txt_bar"></span>
+                          <a href="[##_s_ad_m_link_##]" class="link_detail">수정</a>
+                          <span class="txt_bar"></span>
+                          <a href="#" onclick="[##_s_ad_s2_onclick_##]" class="link_detail">[##_s_ad_s1_label_##]</a>
+                          <span class="txt_bar"></span>
+                          <a href="#" onclick="[##_s_ad_d_onclick_##]" class="link_detail">삭제</a>
+                        </span>
+                      </s_ad_div>
+                    </span>
+                  </div>
+                  <div class="area_view">
+                    [##_article_rep_desc_##]
+                  </div>
+                  <div class="area_etc">
+                    <strong class="screen_out">공유하기 링크</strong>
+                    <ul class="list_share">
+                      <li>
+                        <a href="#none" class="ico_skin link_fb" data-service="facebook">페이스북</a>
+                      </li>
+                      <li>
+                        <a href="#none" class="ico_skin link_ks" data-service="kakaostory">카카오스토리</a>
+                      </li>
+                      <li>
+                        <a href="#none" class="ico_skin link_tw" data-service="twitter">트위터</a>
+                      </li>
+                    </ul>
+
+                    <s_tag_label>
+                      <dl class="list_tag">
+                        <dt class="tit_tag">태그 클라우드</dt>
+                        <dd class="desc_tag">[##_tag_label_rep_##]</dd>
+                      </dl>
+                    </s_tag_label>
+                  </div>
+
+                  <div class="bottom_profile">
+                    <div class="left_img">
+                      <img src="[##_image_##]" class="img_profile" alt="프로필사진">
+                      </a>
+                    </div>
+                    <div class="right_text">
+                      <div>
+                        <h2>[##_blogger_##] (Yu Yongwoo)</h2>
+                      </div>
+                      <p>My MBTI type is ENTP. (Of course I do not believe it 100%, but I want to do that) I use Node.js to
+                        develop the backend. I use Ubuntu Linux as my development environment, and I love Vim. I am interested
+                        in open source and are keen to contribute. I have a bachelor's degree in computer science from Catholic
+                        University and now a software engineer at Plating Inc., I spent about 5 years developing and learning,
+                        and I am still interested in software development and culture. Recently, I am interested in React,
+                        Serverless structure, Domain Design Driven. Sometimes I play drums in the band.</p>
+                    </div>
+                    <div class="ico_align">
+                      <ul class="list_share ico_custom">
+                        <li>
+                          <a href="http://facebook.com/luckyyowu" target="_black">
+                            <img src="http://tistory1.daumcdn.net/tistory/1641552/skin/images/facebook48.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://instagram.com/luckyyowu" target="_black">
+                            <img src="http://tistory1.daumcdn.net/tistory/1641552/skin/images/instagram48.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://twitter.com/luckyyowu" target="_black">
+                            <img src="http://tistory1.daumcdn.net/tistory/1641552/skin/images/twitter48.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/yongwoo-yu-867101114" target="_black">
+                            <img src="http://tistory1.daumcdn.net/tistory/1641552/skin/images/linkedin48.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://github.com/uyu423" target="_black">
+                            <img src="http://tistory1.daumcdn.net/tistory/1641552/skin/images/github48.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mailto:uyu423@gmail.com" target="_black">
+                            <img src="http://tistory1.daumcdn.net/tistory/1641552/skin/images/gmail48.png" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="[##_rss_url_##]" target="_black">
+                            <img src="http://tistory1.daumcdn.net/tistory/1641552/skin/images/rss48.png" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="area_reply ">
+
+                  <!-- 대체텍스트 댓글펼치기/댓글접기 변경 -->
+                  <s_rp>
+                    <button type="button" class="btn_replymore">이전 댓글 보기</button>
+                    <s_rp_container>
+                      <ul class="list_reply">
+                        <s_rp_rep>
+                          <li id='[##_rp_rep_id_##]' class="[##_rp_rep_class_##]">
+
+                            <img src="http://t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" width="50" height="50" class="img_profile"
+                              alt="프로필사진">
+
+                            <span class="reply_content">
+                              <span class="tit_nickname">[##_rp_rep_name_##]
+                                <span class="ico_skin ico_secret"></span>
+                              </span>
+                              <span class="txt_reply">[##_rp_rep_desc_##]</span>
+                              <span class="txt_date">[##_rp_rep_date_##]</span>
+                            </span>
+                            <button type="button" class="btn_replymenu">
+                              <span class="ico_skin ico_replymenu">댓글 메뉴</span>
+                            </button>
+                            <div class="my_edit">
+                              <a href="[##_rp_rep_link_##]" class="link_edit">댓글주소</a>
+                              <a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="link_edit">수정/삭제</a>
+                              <a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="link_edit">댓글쓰기</a>
+                            </div>
+                          </li>
+
+                          <s_rp2_container>
+                            <s_rp2_rep>
+                              <li id='[##_rp_rep_id_##]' class="re_reply [##_rp_rep_class_##]">
+
+                                <img src="http://t1.daumcdn.net/tistory_admin/static/skin/avatar_default.gif" width="50" height="50" class="img_profile"
+                                  alt="프로필사진">
+
+                                <span class="reply_content">
+                                  <span class="tit_nickname">[##_rp_rep_name_##]
+                                    <span class="ico_skin ico_secret"></span>
+                                  </span>
+                                  <span class="txt_reply">[##_rp_rep_desc_##]</span>
+                                  <span class="txt_date">[##_rp_rep_date_##]</span>
+                                </span>
+                                <button type="button" class="btn_replymenu">
+                                  <span class="ico_skin ico_replymenu">댓글 메뉴</span>
+                                </button>
+                                <div class="my_edit">
+                                  <a href="[##_rp_rep_link_##]" class="link_edit">댓글주소</a>
+                                  <a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="link_edit">수정/삭제</a>
+                                </div>
+                              </li>
+                            </s_rp2_rep>
+                          </s_rp2_container>
+                        </s_rp_rep>
+                      </ul>
+                    </s_rp_container>
+
+                    <s_rp_input_form>
+                      <fieldset class="fld_reply">
+                        <legend class="screen_out">댓글쓰기 폼</legend>
+                        <div class="reply_write ">
+                          <label for="[##_rp_input_comment_##]" class="lab_write"></label>
+                          <textarea id="[##_rp_input_comment_##]" name="[##_rp_input_comment_##]" class="tf_reply" placeholder="여러분의 소중한 댓글을 입력해주세요"
+                            tabindex="1"></textarea>
+                        </div>
+                        <div class="reply_writer">
+                          <s_rp_member>
+                            <s_rp_guest>
+                              <div class="writer_info">
+                                <span class="info_name ">
+                                  <span class="wrap_info">
+                                    <input type="text" name="[##_rp_input_name_##]" id="[##_rp_input_name_##]" class="inp_info" placeholder="이름" value="[##_guest_name_##]"
+                                      tabindex="2">
+                                  </span>
+                                </span>
+                                <span class="info_pw ">
+                                  <span class="wrap_info">
+                                    <input type="password" name="[##_rp_input_password_##]" id="[##_rp_input_password_##]" class="inp_info" placeholder="비밀번호"
+                                      tabindex="3">
+                                  </span>
+                                </span>
+                              </div>
+                            </s_rp_guest>
+                            <div class="writer_check">
+                              <span class="check_secret ">
+                                <input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]" class="inp_secret" tabindex="4">
+                                <label for="[##_rp_input_is_secret_##]" class="lab_secret">
+                                  <span class="ico_skin ico_check"></span>비밀글
+                                </label>
+                              </span>
+
+                            </div>
+
+                          </s_rp_member>
+
+                          <div class="writer_btn">
+                            <button type="submit" class="btn_enter" onclick="[##_rp_onclick_submit_##]" tabindex="5">입력</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </s_rp_input_form>
+
+                  </s_rp>
+                </div>
+            </div>
+            </s_permalink_article_rep>
+        </div>
+        </s_article_rep>
+
+        <s_tag>
+          <div class="area_list">
+            <div class="tit_category">
+              <a class="link_category">태그</a>
+            </div>
+          </div>
+
+          <div id="mArticle" class="article_skin skin_tag">
+            <h2 id="dkBody" class="screen_out">티스토리 태그</h2>
+            <ul class="list_tag">
+              <s_tag_rep>
+                <li>
+                  <a href="[##_tag_link_##]" class="link_tag [##_tag_class_##]">[##_tag_name_##]</a>
+                </li>
+              </s_tag_rep>
+            </ul>
+          </div>
+        </s_tag>
+
+        <s_paging>
+          <div class="area_paging area_paging_list">
+            <span class="inner_paging">
+              <a [##_prev_page_##] class="ico_skin link_prev [##_no_more_prev_##]">이전</a>
+              <s_paging_rep>
+                <a [##_paging_rep_link_##] class="link_page">[##_paging_rep_link_num_##]</a>
+              </s_paging_rep>
+              <a [##_next_page_##] class="ico_skin link_next [##_no_more_next_##]">다음</a>
+            </span>
+          </div>
+
+          <div class="area_paging area_paging_simple">
+            <div class="inner_paging">
+              <a [##_prev_page_##] class="link_prev [##_no_more_prev_##]">
+                <span class="ico_skin ico_prev"></span>이전
+              </a>
+
+              <a [##_next_page_##] class="link_next [##_no_more_next_##]">
+                다음
+                <span class="ico_skin ico_next"></span>
+              </a>
+            </div>
+          </div>
+        </s_paging>
+
+
+        <div id="mEtc" class="wrap_etc">
+          <div class="inner_aside">
+            <s_sidebar>
+              <s_sidebar_element>
+                <!-- 블로그 차트 -->
+                <div class="box_aside">
+                  <iframe src="http://widget.blogchart.co.kr/bc_img/widget/index.html?apikey=c245267a1f67f10c47650dd31a6136ec&rank_yn=true"
+                    frameborder="no" scrolling="no" allowtransparency="true" height="225" width="170"></iframe>
+                </div>
+              </s_sidebar_element>
+
+              <s_sidebar_element>
+                <!-- 공지사항 -->
+                <s_rct_notice>
+                  <div class="box_aside">
+                    <strong>공지사항</strong>
+                    <ul class="list_board">
+                      <s_rct_notice_rep>
+                        <li>
+                          <a href="[##_notice_rep_link_##]" class="link_board">[##_notice_rep_title_##]</a>
+                        </li>
+                      </s_rct_notice_rep>
+                    </ul>
+                  </div>
+                </s_rct_notice>
+              </s_sidebar_element>
+
+
+              <s_sidebar_element>
+                <!-- 최근에 올라온 글 -->
+                <div class="box_aside">
+                  <strong>최근에 올라온 글</strong>
+                  <ul class="list_board">
+                    <s_rctps_rep>
+                      <li>
+                        <a href="[##_rctps_rep_link_##]" class="link_board">[##_rctps_rep_title_##]</a>
+                      </li>
+                    </s_rctps_rep>
+                  </ul>
+                </div>
+              </s_sidebar_element>
+
+
+
+              <s_sidebar_element>
+                <!-- 최근에 달린 댓글 -->
+                <div class="box_aside">
+                  <strong>최근에 달린 댓글</strong>
+                  <ul class="list_board">
+                    <s_rctrp_rep>
+                      <li>
+                        <a href="[##_rctrp_rep_link_##]" class="link_board">[##_rctrp_rep_desc_##]</a>
+                      </li>
+                    </s_rctrp_rep>
+                  </ul>
+                </div>
+              </s_sidebar_element>
+
+
+              <s_sidebar_element>
+                <!-- 방문자수 -->
+                <div class="box_aside lst">
+                  <dl class="list_total">
+                    <dt>Total</dt>
+                    <dd>[##_count_total_##]</dd>
+                  </dl>
+                  <dl class="list_visitor">
+                    <dt>Today</dt>
+                    <dd>[##_count_today_##]</dd>
+                  </dl>
+                  <dl class="list_visitor">
+                    <dt>Yesterday</dt>
+                    <dd>[##_count_yesterday_##]</dd>
+                  </dl>
+                </div>
+              </s_sidebar_element>
+
+
+              <s_sidebar_element>
+                <!-- 링크 -->
+                <div class="box_aside">
+                  <strong>링크</strong>
+                  <ul class="list_board">
+                    <s_link_rep>
+                      <li>
+                        <a href="[##_link_url_##]" class="link_board" target="_blank">[##_link_site_##]</a>
+                      </li>
+                    </s_link_rep>
+                  </ul>
+                </div>
+              </s_sidebar_element>
+
+
+              <s_sidebar_element>
+                <!-- 태그 클라우드 -->
+                <div class="box_aside">
+                  <strong>TAG</strong>
+                  <ul class="list_tag">
+                    <s_random_tags>
+                      <li>
+                        <a href="[##_tag_link_##]" class="link_tag [##_tag_class_##]">[##_tag_name_##]</a>
+                      </li>
+                    </s_random_tags>
+                  </ul>
+                  <a href="[##_taglog_link_##]" class="link_more">more</a>
+                </div>
+              </s_sidebar_element>
+
+              <s_sidebar_element>
+                <!-- 달력 -->
+                <div class="box_aside">
+                  [##_calendar_##]
+                </div>
+              </s_sidebar_element>
+
+              <s_sidebar_element>
+                <!-- 글 보관함 -->
+                <div class="box_aside lst">
+                  <strong>글 보관함</strong>
+                  <ul class="list_keep">
+                    <s_archive_rep>
+                      <li>
+                        <a href="[##_archive_rep_link_##]" class="link_keep">[##_archive_rep_date_##]</a> ([##_archive_rep_count_##])</li>
+                    </s_archive_rep>
+                  </ul>
+                </div>
+              </s_sidebar_element>
+
+            </s_sidebar>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="hide">
+    <div id="dkFoot" role="contentinfo" class="area_foot">
+      Designed by
+      <em class="emph_t">Tistory</em> / Design Customize by
+      <em class="emph_t">Yowu</em>
+    </div>
+    </div>
+  </s_t3>
+
+  <script src="./images/script.js"></script>
+  <script>
+    (function ($) {
+      $.Area.init();
+    })(jQuery);
+  </script>
+
+</body>
+
+</html>
