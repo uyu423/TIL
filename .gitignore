@@ -1,3 +1,4 @@
 *.out
 *.swp
 BLOG/CatchApiServerExceptionWithTelegramBot.js
+.vscode/
