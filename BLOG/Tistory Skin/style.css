@@ -1171,7 +1171,7 @@ pre.editor-colors .bracket-matcher .region {
 .skin_view .bottom_profile .left_img { width: 20%; float:left; margin-bottom: 10px}
 .skin_view .bottom_profile .right_text { width: 80%; float: right;}
 .skin_view .bottom_profile .right_text h2 { padding-left: 30px; padding-top: 5px;}
-.skin_view .bottom_profile .right_text p { padding-left: 30px; letter-spacing:0; padding-top: 10px; font-size: 12px; }
+.skin_view .bottom_profile .right_text p { padding-left: 30px; letter-spacing:0; padding-top: 10px; font-size: 0.9em }
 .skin_view .bottom_profile .img_profile { width: 165px; height: 165px; display: block; margin-left: auto; margin-right: auto; border-radius: 100px; float: initial}
 
 .ico_custom img { display: block; margin-right: auto;}
@@ -1400,7 +1400,7 @@ pre.editor-colors .bracket-matcher .region {
 	.skin_view .bottom_profile .img_profile { width: 120px; height: 120px; display: block; margin-left: auto; margin-right: auto; border-radius: 90px; float: initial}
 	.skin_view .bottom_profile .right_text { width: auto; float: none;}
 	.skin_view .bottom_profile .right_text h2 { text-align: center; padding-left: 0; padding-top: 5px;}
-	.skin_view .bottom_profile .right_text p { text-align: center; padding-left: 0; padding-top: 10px; font-size:15px; }
+	.skin_view .bottom_profile .right_text p { text-align: center; padding-left: 0; padding-top: 10px; font-size:0.9em; }
 	.ico_align { padding-top: 10px; padding-bottom: 10px;}
 	.ico_align ul {text-align:center;width:280px;margin-left:auto;margin-right:auto; padding-left:0px;}
 	.ico_align li {float:left;padding:5px}
