@@ -6,15 +6,17 @@
 {
   "workbench.colorTheme": "Material Theme",
   "workbench.iconTheme": "eq-material-theme-icons",
-  "editor.fontFamily": "Ubuntu Mono derivative Powerline",
+  "editor.fontFamily": "Ubuntu Mono",
   "editor.tabSize": 2,
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.wordWrap": "on",
   "tslint.autoFixOnSave": true,
-  "window.zoomLevel": 0,
   "editor.rulers": [ 130 ],
 }
 ```
+
+## Ubuntu Mono
+- https://design.ubuntu.com/font/
 
 ## Ubuntu Mono derivative Powerline
 - https://github.com/powerline/fonts/tree/master/UbuntuMono
