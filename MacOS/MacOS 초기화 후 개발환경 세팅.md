@@ -25,6 +25,14 @@
 
 - 시스템 환경 설정 - 키보드 - 단축키 - 입력 소스
 
+### 키보드 키 반복 설정
+
+- 시스템 환경 설정 - 키보드 - 키보드에서 `키 반복`, `반복 지연 시간` 조절
+
+### F1, F2 키를 표준 기능 키로 사용
+
+- 시스템 환경 설정 - 키보드 - 키보드에서 `F1, F2 등의 키를 표준 기능 키로 사용` 체크
+
 ## 개발 환경 설정
 
 > 지극히 개인적인 개발 환경 설정 by Yowu
@@ -39,11 +47,20 @@
 
 - Terminal 말고 iTerm2 를 쓰자
 - https://www.iterm2.com
+- 커스터마이징
+  - iTerm2 Menu - Preferences - Profile
+  - Colors - Color Preset 은 Tango Dark 추천
+  - Text - Font 는 Powerline Mono 계열 추천
+    - [Ubuntu Mono derivative Powerline](https://github.com/powerline/fonts/tree/master/UbuntuMono) 
 
 ### Homebrew
 
 - MacOS 계의 apt
 - https://brew.sh
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 
 ### git
 
@@ -52,6 +69,19 @@ brew install git
 ```
 
 ### zsh & oh my zsh
+
+```bash
+brew install zsh && chsh -s `which zsh`
+```
+- zsh 시 올바르지 않은 shell  에러 발생 시 `/etc/shells` 에 which zsh 의 결과 값 추가
+- [zsh 설치와 유용한 플러그인](https://github.com/uyu423/TIL/blob/master/Terminal/zsh-%EC%84%A4%EC%B9%98-%ED%9B%84-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8.md) 참고
+
+### Vim (with Plugins)
+
+```bash
+brew install vim && echo alias vi="/usr/local/bin/vim" >> ~/.zshrc && source ~/.zshrc
+```
+- 플러그인 쪽은 https://github.com/uyu423/vimrc-vundle-script 참고
 
 ### Visual Studio Code
 
@@ -64,19 +94,16 @@ brew install git
 ### GitKraken
 
 - https://www.gitkraken.com/download/mac
-- Github Login
-- [GitKraken에서 Group의 Private Repository Clone하기
-](https://github.com/uyu423/TIL/blob/master/git%EA%B3%BC%20Github/GitKraken%EC%97%90%EC%84%9C%20Group%EC%9D%98%20Private%20Repository%20Clone%ED%95%98%EA%B8%B0.md) 참고  
+- Github Login 후 [GitKraken에서 Group의 Private Repository Clone하기](https://github.com/uyu423/TIL/blob/master/git%EA%B3%BC%20Github/GitKraken%EC%97%90%EC%84%9C%20Group%EC%9D%98%20Private%20Repository%20Clone%ED%95%98%EA%B8%B0.md) 참고  
+
+### Node.js
+
+- https://nodejs.org
 
 ### Paw
 
+- https://paw.cloud
+
 ### Charles
 
-### Vim with Plugins
-
-### 
-
-## 기타 환경 설정
-
-### Kaspersky 백신
-
+- https://www.charlesproxy.com/
