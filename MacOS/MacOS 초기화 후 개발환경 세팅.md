@@ -102,8 +102,25 @@ brew install vim && echo alias vi="/usr/local/bin/vim" >> ~/.zshrc && source ~/.
 
 ### Paw
 
+- API Documentaion & Testing Tool
 - https://paw.cloud
 
 ### Charles
 
+- HTTP Comunication Proxy Hooking
 - https://www.charlesproxy.com/
+
+## 기타 환경 설정
+
+### FortiClient for MacOS
+
+- VPN Client
+- https://www.forticlient.com/downloads 
+
+### Slack
+
+ - https://slack.com/downloads/osx
+
+### Hangout
+
+- https://get.google.com/chat/
