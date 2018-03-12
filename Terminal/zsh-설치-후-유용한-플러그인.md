@@ -3,6 +3,8 @@
 sudo apt install zsh
 chsh -s `which zsh`
 ```
+- `chsh` 로 기본 셸 변경 불가시 `which zsh` 의 값을 `/etc/shells` 에 추가
+
 ## Edit ~/.zshrc
 ```bash
 ZSH_THEME="agnoster"
@@ -24,12 +26,18 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # .zshrc plugins=( [plugins...] zsh-syntax-highlighting)
 ```
+
+### zsh-better-npm-completion
+- npm run 스크립트 Auto Completion
+```bash
+git clone https://github.com/lukechilds/zsh-better-npm-completion ~/.oh-my-zsh/custom/plugins/zsh-better-npm-completion
+# ./zshrc plugins=( [...plugins] zsh-better-npm-completion )
+```
+
 ### bullet-train
 - 좀 더 유용한 zsh 테마
 ```bash
-wget http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
-mkdir $ZSH_CUSTOM/themes
-mv bullet-train.zsh-theme $ZSH_CUSTOM/themes/
+wget http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme && mkdir $ZSH_CUSTOM/themes && mv bullet-train.zsh-theme $ZSH_CUSTOM/themes/
 # .zshrc ZSH_THEME="bullet-train"
 ```
 
