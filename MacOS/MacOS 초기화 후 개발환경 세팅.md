@@ -9,7 +9,7 @@
   - 파일 시스템 결정 시 대소문자 구분 옵션과 구분하지 않음 옵션이 있는데, 구분하지 않음 옵션을 선택
   - 대소문자 구분 옵션 선택시 일부 Mac Application 에서 문제가 발생 할 수도 있음
 - 디스크 유틸리티를 탈주 후 MacOS 다시 설치 선택. (인터넷 연결 필요)
-- 설치까지 한 30분 가량 걸림
+- 설치까지 한 30 분 가량 걸림
 
 ## 재설치 마무리
 
@@ -39,11 +39,11 @@
 
 ### Chrome
 
-- 나는 이제 구글 크롬의 노예 
+- 나는 이제 구글 크롬의 노예
 - https://chrome.com
 - 설치 후 계정 연결
 
-### iTerm2 
+### iTerm2
 
 - Terminal 말고 iTerm2 를 쓰자
 - https://www.iterm2.com
@@ -51,16 +51,16 @@
   - iTerm2 Menu - Preferences - Profile
   - Colors - Color Preset 은 Tango Dark 추천
   - Text - Font 는 Powerline Mono 계열 추천
-    - [Ubuntu Mono derivative Powerline](https://github.com/powerline/fonts/tree/master/UbuntuMono) 
+    - [Ubuntu Mono derivative Powerline](https://github.com/powerline/fonts/tree/master/UbuntuMono)
 
 ### Homebrew
 
 - MacOS 계의 apt
 - https://brew.sh
+
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-
 
 ### git
 
@@ -73,7 +73,8 @@ brew install git
 ```bash
 brew install zsh && chsh -s `which zsh`
 ```
-- zsh 시 올바르지 않은 shell  에러 발생 시 `/etc/shells` 에 which zsh 의 결과 값 추가
+
+- zsh 시 올바르지 않은 shell 에러 발생 시 `/etc/shells` 에 which zsh 의 결과 값 추가
 - [zsh 설치와 유용한 플러그인](https://github.com/uyu423/TIL/blob/master/Terminal/zsh-%EC%84%A4%EC%B9%98-%ED%9B%84-%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8.md) 참고
 
 ### Vim (with Plugins)
@@ -81,6 +82,7 @@ brew install zsh && chsh -s `which zsh`
 ```bash
 brew install vim && echo alias vi="/usr/local/bin/vim" >> ~/.zshrc && source ~/.zshrc
 ```
+
 - 플러그인 쪽은 https://github.com/uyu423/vimrc-vundle-script 참고
 
 ### Visual Studio Code
@@ -94,7 +96,7 @@ brew install vim && echo alias vi="/usr/local/bin/vim" >> ~/.zshrc && source ~/.
 ### GitKraken
 
 - https://www.gitkraken.com/download/mac
-- Github Login 후 [GitKraken에서 Group의 Private Repository Clone하기](https://github.com/uyu423/TIL/blob/master/git%EA%B3%BC%20Github/GitKraken%EC%97%90%EC%84%9C%20Group%EC%9D%98%20Private%20Repository%20Clone%ED%95%98%EA%B8%B0.md) 참고  
+- Github Login 후 [GitKraken 에서 Group 의 Private Repository Clone 하기](https://github.com/uyu423/TIL/blob/master/git%EA%B3%BC%20Github/GitKraken%EC%97%90%EC%84%9C%20Group%EC%9D%98%20Private%20Repository%20Clone%ED%95%98%EA%B8%B0.md) 참고
 
 ### Node.js
 
@@ -115,11 +117,11 @@ brew install vim && echo alias vi="/usr/local/bin/vim" >> ~/.zshrc && source ~/.
 ### FortiClient for MacOS
 
 - VPN Client
-- https://www.forticlient.com/downloads 
+- https://www.forticlient.com/downloads
 
 ### Slack
 
- - https://slack.com/downloads/osx
+- https://slack.com/downloads/osx
 
 ### Hangout
 
