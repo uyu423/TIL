@@ -4,20 +4,18 @@
 - ~~나는 모르겠는데 쓰다보니 자꾸 이상한 옵션이 막 생긴다~~
 
 ```json
-{
-  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.iconTheme": "vscode-icons",
   "editor.fontFamily": "Ubuntu Mono",
   "editor.autoIndent": true,
   "editor.tabSize": 2,
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.wordWrap": "on",
-  "tslint.autoFixOnSave": true,
-  "editor.rulers": [
-    130
-  ],
-  "window.zoomLevel": 1,
+  // "tslint.autoFixOnSave": true,
+  "editor.rulers": [130],
+  "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
   "editor.formatOnSave": true,
+  "vim.useSystemClipboard": true,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -28,7 +26,6 @@
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
   },
-  "gitlens.historyExplorer.enabled": true,
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#C6FF00",
     "list.activeSelectionForeground": "#C6FF00",
@@ -42,11 +39,19 @@
     "tab.activeBorder": "#C6FF00",
     "notificationLink.foreground": "#C6FF00"
   },
-}
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": true,
+  "vim.disableExtension": false,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "javascript.implicitProjectConfig.experimentalDecorators": true
 ```
 
 ## Ubuntu Mono
+
 - https://design.ubuntu.com/font/
 
 ## Ubuntu Mono derivative Powerline
+
 - https://github.com/powerline/fonts/tree/master/UbuntuMono

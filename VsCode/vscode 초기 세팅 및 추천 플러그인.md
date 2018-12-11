@@ -23,9 +23,29 @@ code --install-extension eamodio.gitlens \
 && code --install-extension esbenp.prettier-vscode \
 && code --install-extension CoenraadS.bracket-pair-colorizer \
 && code --install-extension wayou.vscode-todo-highlight
+# Vscode Korean Patch
+code --install-extension ms-ceintl.vscode-language-pack-ko
+# Vscode Vim Mode
+code --install-extension vscodevim.vim
+# Json Util
+code --install-extension eriklynd.json-tools
+# Json to TS Interface
+code --install-extension mariusalchimavicius.json-to-ts
+# Vscode famous Icon Theme(Ctrl + Shift + P -> Icons: Activate VSCode Icons)
+code --install-extension robertohuertasm.vscode-icons
+
 ```
 
-- golang 추가 설치
+### Typescript 관련
+
+```bash
+# Typescript lint plugin by MS
+code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+# Typescript Commmon Lint
+# code --install-extension eg2.tslint
+```
+
+### golang 관련
 
 ```bash
 code --install-extension ms-vscode.go
