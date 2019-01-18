@@ -14,15 +14,15 @@
 - TypeScript, PHP, vim extenstion 설정은 걍 vscode 켜고 첫화면에서 클릭 세번하니 완료됨.
 
 ```bash
-code --install-extension eamodio.gitlens \
-&& code --install-extension shd101wyy.markdown-preview-enhanced \
-&& code --install-extension Equinusocio.vsc-material-theme \
-&& code --install-extension PKief.material-icon-theme \
-&& code --install-extension abusaidm.html-snippets \
-&& code --install-extension tht13.html-preview-vscode \
-&& code --install-extension esbenp.prettier-vscode \
-&& code --install-extension CoenraadS.bracket-pair-colorizer \
-&& code --install-extension wayou.vscode-todo-highlight
+code --install-extension eamodio.gitlens
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension PKief.material-icon-theme
+code --install-extension abusaidm.html-snippets
+code --install-extension tht13.html-preview-vscode
+code --install-extension esbenp.prettier-vscode
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension wayou.vscode-todo-highlight
 # Vscode Korean Patch
 code --install-extension ms-ceintl.vscode-language-pack-ko
 # Vscode Vim Mode
