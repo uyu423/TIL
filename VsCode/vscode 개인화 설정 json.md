@@ -8,9 +8,9 @@
   "editor.fontFamily": "Ubuntu Mono",
   "editor.autoIndent": true,
   "editor.tabSize": 2,
-  "editor.fontSize": 18,
+  "editor.fontSize": 20,
   "editor.wordWrap": "on",
-  // "tslint.autoFixOnSave": true,
+  "tslint.autoFixOnSave": true,
   "editor.rulers": [130],
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
@@ -45,7 +45,9 @@
   "vim.disableExtension": false,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "javascript.implicitProjectConfig.experimentalDecorators": true
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline"
 ```
 
 ## Ubuntu Mono
