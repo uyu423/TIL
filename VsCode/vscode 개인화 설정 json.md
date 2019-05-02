@@ -11,6 +11,12 @@
   "editor.fontSize": 20,
   "editor.wordWrap": "on",
   "tslint.autoFixOnSave": true,
+  "eslint.validate":  [
+    "javascript",
+    "javascriptreact",
+    {"language":  "typescript",  "autoFix":  true  },
+    {"language":  "typescriptreact",  "autoFix":  true  }
+  ],
   "editor.rulers": [130],
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
