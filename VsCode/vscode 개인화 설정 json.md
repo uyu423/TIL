@@ -48,7 +48,8 @@
   "gitlens.views.lineHistory.enabled": true,
   "javascript.implicitProjectConfig.experimentalDecorators": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline"
+  "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
+  "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\bash.exe"
 }
 ```
 
@@ -59,3 +60,8 @@
 ## Ubuntu Mono derivative Powerline
 
 - https://github.com/powerline/fonts/tree/master/UbuntuMono
+
+## in-terminal with Bash On Ubuntu
+
+- Windows `Bash on Ubuntu` 를 활용한 vscode 내 터미널을 사용하기 위해서는 윈도우 스토어에서 `Ubuntu` 가 설치되어있어야함
+  - https://www.microsoft.com/store/productId/9NBLGGH4MSV6
