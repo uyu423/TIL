@@ -4,6 +4,7 @@
 - ~~나는 모르겠는데 쓰다보니 자꾸 이상한 옵션이 막 생긴다~~
 
 ```json
+{
   "workbench.iconTheme": "vscode-icons",
   "editor.fontFamily": "Ubuntu Mono",
   "editor.autoIndent": true,
@@ -11,12 +12,6 @@
   "editor.fontSize": 20,
   "editor.wordWrap": "on",
   "tslint.autoFixOnSave": true,
-  "eslint.validate":  [
-    "javascript",
-    "javascriptreact",
-    {"language":  "typescript",  "autoFix":  true  },
-    {"language":  "typescriptreact",  "autoFix":  true  }
-  ],
   "editor.rulers": [130],
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
@@ -54,6 +49,7 @@
   "javascript.implicitProjectConfig.experimentalDecorators": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline"
+}
 ```
 
 ## Ubuntu Mono
