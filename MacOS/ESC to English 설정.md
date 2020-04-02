@@ -4,7 +4,10 @@ vim 애용하는 입장에서 `esc` 키 눌렀을 때 영문 변환 되면 굉�
 
 Mac Application `Karabiner` 가 필요함
 
-다음 설정 값을 import (근데 import 어디서 시키는지 까먹음)
+다음 설정 값을 import 한다.
+
+- Karabiner-Elements Preferences - Misc
+- Open config folder (~/.config/karabiner) 혹은 `~/.config/karabiner/karaniber.json` 을 직접 수정
 
 thanks for @rinae
 
@@ -22,7 +25,8 @@ thanks for @rinae
                     "basic.simultaneous_threshold_milliseconds": 25,
                     "basic.to_delayed_action_delay_milliseconds": 250,
                     "basic.to_if_alone_timeout_milliseconds": 500,
-                    "basic.to_if_held_down_threshold_milliseconds": 250
+                    "basic.to_if_held_down_threshold_milliseconds": 250,
+                    "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
                     {
@@ -74,6 +78,22 @@ thanks for @rinae
                             },
                             "to": {
                                 "key_code": "escape"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_control"
+                            },
+                            "to": {
+                                "key_code": "left_command"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": {
+                                "key_code": "left_control"
                             }
                         }
                     ]
@@ -191,20 +211,16 @@ thanks for @rinae
                 }
             ],
             "name": "Default profile",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": true,
-            "simple_modifications": [
-                {
-                    "from": {
-                        "key_code": "caps_lock"
-                    },
-                    "to": {
-                        "key_code": "left_control"
-                    }
-                }
-            ],
+            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
-                "keyboard_type": "ansi"
+                "country_code": 0,
+                "keyboard_type": "ansi",
+                "mouse_key_xy_scale": 100
             }
         }
     ]
