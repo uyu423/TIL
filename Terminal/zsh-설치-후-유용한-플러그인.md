@@ -35,10 +35,19 @@ git clone https://github.com/lukechilds/zsh-better-npm-completion ~/.oh-my-zsh/c
 ```
 
 ### bullet-train
+
 - 좀 더 유용한 zsh 테마
 ```bash
 wget http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme && mkdir $ZSH_CUSTOM/themes && mv bullet-train.zsh-theme $ZSH_CUSTOM/themes/
 # .zshrc ZSH_THEME="bullet-train"
+```
+- `.zshrc` 에 아래 내용을 추가하면 `hostname` 을 제거할 수 있다.
+```bash
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
 ```
 
 # scm_breeze
