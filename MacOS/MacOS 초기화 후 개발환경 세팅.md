@@ -1,6 +1,7 @@
-# MacOS (High Sierra) 초기화 후 개발 환경 세팅
+# MacOS 초기화 후 개발 환경 세팅
 
 > 2018.03.10 회사에서 지급받은 맥북프로 초기화 진행 하면서 기록
+> 2020.04.02 에 17년형 MacBook Pro 에서 19년형 MacBook Pro 로 교체하면서 업데이트 함
 
 ## 초기화 및 재설치
 
@@ -28,10 +29,13 @@
 ### 키보드 키 반복 설정
 
 - 시스템 환경 설정 - 키보드 - 키보드에서 `키 반복`, `반복 지연 시간` 조절
+  - 키반복은 제일 빠르게
+  - 반복 지연 시간은 제일 짧은거에서 한칸 왼쪽이 좋은 듯
 
 ### F1, F2 키를 표준 기능 키로 사용
 
 - 시스템 환경 설정 - 키보드 - 키보드에서 `F1, F2 등의 키를 표준 기능 키로 사용` 체크
+- 터치바 모델은 해당사항 없음
 
 ## 개발 환경 설정
 
@@ -48,10 +52,15 @@
 - Terminal 말고 iTerm2 를 쓰자
 - https://www.iterm2.com
 - 커스터마이징
+  - iTerm2 Menu - Preferences - Appearance
+    - Theme => Minimal
+    - Status bar location => Bottom
   - iTerm2 Menu - Preferences - Profile
-  - Colors - Color Preset 은 Tango Dark 추천
-  - Text - Font 는 Powerline Mono 계열 추천
-    - [Ubuntu Mono derivative Powerline](https://github.com/powerline/fonts/tree/master/UbuntuMono)
+    - Colors - Color Preset 은 Tango Dark 추천
+    - Text - Font 는 Powerline Mono 계열 추천
+      - [Ubuntu Mono derivative Powerline](https://github.com/powerline/fonts/tree/master/UbuntuMono)
+      - Size 18
+    - Session 에서 Status Bar enable
 
 ### Homebrew
 
@@ -101,6 +110,14 @@ brew install vim && echo alias vi="/usr/local/bin/vim" >> ~/.zshrc && source ~/.
 ### Node.js
 
 - https://nodejs.org
+- 이젠 `nvs` 를 사용하자
+  - https://github.com/jasongin/nvs
+    ```bash
+    export NVS_HOME="$HOME/.nvs"
+    git clone https://github.com/jasongin/nvs "$NVS_HOME"
+    . "$NVS_HOME/nvs.sh" install
+    ```
+  - nvs 설치 후 shell profile 에서 `nvs auto on` 을 넣어두면 디렉토리의 `.node_version` 을 읽어 자동으로 해당하는 node 버전으로 맞춰준다.
 
 ### Paw
 
