@@ -34,7 +34,7 @@ N: See apt-secure(8) manpage for repository creation and user configuration deta
 - 위 예제에서는 `1234567890ABCDEF` 로 표시했지만 본인 터미널에 출력된 값을 사용한다.
 
 ```bash
-$ sudo gpg --keyserver pool.sks-keyservers.net --recv-key 1234567890ABCDEF
+$ sudo gpg --keyserver keyserver.ubuntu.com --recv-key 1234567890ABCDEF
 gpg: WARNING: unsafe ownership on homedir '/home/yowu/.gnupg'
 
 gpg: key 1234567890ABCDEF: public key "Canonical Archive Automatic Signing Key <ftpmaster@canonical.com>" imported
