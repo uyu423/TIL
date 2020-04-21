@@ -9,7 +9,45 @@
 - vscode 열고, Shift + Cmd + P
 - Shell Command: Install 'code' command in PATH
 
-## package install
+## package install (v.20200421)
+
+```
+$ code --list-extensions
+
+aaron-bond.better-comments
+amatiasq.sort-imports
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+eamodio.gitlens
+eg2.vscode-npm-script
+Equinusocio.vsc-community-material-theme
+Equinusocio.vsc-material-theme
+equinusocio.vsc-material-theme-icons
+esbenp.prettier-vscode
+ms-vscode.vscode-typescript-tslint-plugin
+PKief.material-icon-theme
+vscodevim.vim
+```
+
+```bash
+# MacBook Pro on Workplace
+
+code --install-extension aaron-bond.better-comments
+code --install-extension amatiasq.sort-imports
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension eg2.vscode-npm-script
+code --install-extension Equinusocio.vsc-community-material-theme
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension equinusocio.vsc-material-theme-icons
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-vscode.vscode-typescript-tslint-plugin
+code --install-extension PKief.material-icon-theme
+code --install-extension vscodevim.vim
+```
+
+## package install (legacy)
 
 - TypeScript, PHP, vim extenstion 설정은 걍 vscode 켜고 첫화면에서 클릭 세번하니 완료됨.
 

@@ -3,6 +3,36 @@
 - [VsCode/초기 세팅.md](https://github.com/uyu423/TIL/blob/master/VsCode/%EC%B4%88%EA%B8%B0%20%EC%84%B8%ED%8C%85.md) 가 선행되어야하는 설정들이 포함되어 있습니다.
 - ~~나는 모르겠는데 쓰다보니 자꾸 이상한 옵션이 막 생긴다~~
 
+## settings.json (v.20200421, MacBook Pro on Workplace)
+
+```json
+{
+  "workbench.colorTheme": "Material Theme",
+  "editor.fontFamily": "Ubuntu Mono",
+  "editor.autoIndent": "full",
+  "editor.tabSize": 2,
+  "editor.fontSize": 18,
+  "editor.wordWrap": "on",
+  "editor.rulers": [130],
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+  "vim.useSystemClipboard": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true
+    // "source.organizeImports": true,
+  },
+  "prettier.singleQuote": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+```
+
+## settings.json (legacy)
+
 ```json
 {
   "workbench.iconTheme": "vscode-icons",
