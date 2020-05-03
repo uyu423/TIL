@@ -1,6 +1,6 @@
 # pm2-dev 로 TypeScript 프로젝트 띄우기
 
-Unitech 사의 [pm2](https://pm2.keymetrics.io/) 는 최근 몇년간 가장 많이 쓰이는 **Node.js Process Manager** 가 아닐까 싶습니다. 예전에는 다른 것도 좀 썼던거 같은데, 서비스 제공을 위한 클러스터링, Reload Trigger, 대시보드 등 다양한 기능들이 추가되면서 Node.js 기반의 프로젝트 서빙에서 필수요소 처럼 되어가고 있습니다.
+Keymetrics 사의 [pm2](https://pm2.keymetrics.io/) 는 최근 몇년간 가장 많이 쓰이는 **Node.js Process Manager** 가 아닐까 싶습니다. 예전에는 다른 것도 좀 썼던거 같은데, 서비스 제공을 위한 클러스터링, Reload Trigger, 대시보드 등 다양한 기능들이 추가되면서 Node.js 기반의 프로젝트 서빙에서 필수요소 처럼 되어가고 있습니다.
 
 `pm2` 에는 `nodemon` 과 같이 개발을 위한 `pm2-dev` 가 내장되어 있습니다. 어차피 `pm2` 를 사용 중이고, `pm2-dev` 기능으로 `nodemon` 을 대체 할 수 있다면 굳이 둘 다 설치해야하나? 라는 생각입니다. ~(어차피 파일 변경 기반 reload 만 지원 된다면...)~
 
