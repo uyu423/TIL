@@ -8,6 +8,7 @@ Mac Application `Karabiner` 가 필요함
 
 - Karabiner-Elements Preferences - Misc
 - Open config folder (~/.config/karabiner) 혹은 `~/.config/karabiner/karaniber.json` 을 직접 수정
+- MacBook Touch Bar 모델의 경우 터치바는 보조 키보드로 인식되어 ESC 키가 매핑되지 않을 수 있다. 이 때의 해결방법은 Devices 탭에서 `No product name` 을 활성화해주자. 이게 터치바다.
 
 thanks for @rinae
 
