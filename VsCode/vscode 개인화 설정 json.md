@@ -25,7 +25,7 @@
     // "source.organizeImports": true,
   },
   "prettier.singleQuote": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
