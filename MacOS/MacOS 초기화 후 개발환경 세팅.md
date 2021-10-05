@@ -41,6 +41,14 @@
 
 > 지극히 개인적인 개발 환경 설정 by Yowu
 
+### Font
+
+- Monospace 기본 폰트는 [Ubuntu Mono](https://assets.ubuntu.com/v1/0cef8205-ubuntu-font-family-0.83.zip)
+- Terminal 폰트는 [Ubuntu Mono derivative Powerline](https://github.com/powerline/fonts/tree/master/UbuntuMono)
+  - Powerline 리소스 포함
+- IDE 개발용 폰트는 [Ubuntu Mono Ligaturized](https://github.com/datavis-tech/ubuntu-mono-ligaturized)
+  - 합자 포함
+
 ### Chrome
 
 - 나는 이제 구글 크롬의 노예

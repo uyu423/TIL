@@ -79,7 +79,7 @@
   "gitlens.views.lineHistory.enabled": true,
   "javascript.implicitProjectConfig.experimentalDecorators": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
+  "terminal.integrated.fontFamily": "Ubuntu Mono Ligaturized",
   "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\bash.exe"
 }
 ```
@@ -87,6 +87,10 @@
 ## Ubuntu Mono
 
 - https://design.ubuntu.com/font/
+
+## Ubuntu Mono Ligaturized
+
+- [Ubuntu Mono Ligaturized](https://github.com/datavis-tech/ubuntu-mono-ligaturized) (합자 포함)
 
 ## Ubuntu Mono derivative Powerline
 
