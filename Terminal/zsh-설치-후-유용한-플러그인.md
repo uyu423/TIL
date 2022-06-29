@@ -17,7 +17,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 ### zsh-autosuggestions
 - 명령어 자동완성 추천
 ```bash
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 # .zshrc plugins=(zsh-autosuggestions)
 ```
 ### zsh-syntax-highlighting
